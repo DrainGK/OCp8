@@ -1,0 +1,77 @@
+.skills{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 3em;
+
+    background: #713175;
+
+    .skills-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title{
+            color: rgba(245, 245, 245, 0.365);
+            font-size: 0.8rem;
+            margin-bottom: 3rem;
+            h2{
+                color: #66fccffb;
+                font-weight: 300;
+                font-size: 1rem;
+                margin-top: 0.5em;
+            }
+        }
+    
+
+        .box-content{
+            width: fit-content;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+            margin: 0 auto;
+
+            gap: 2rem;
+
+            .frontend, .backend, .lang, .adobe{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                gap: 1rem;
+
+                ul{
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    gap: 1rem;
+
+                    text-align: left;
+                    margin-top: 1em;
+                }
+            }
+
+            .box{
+                width: 400px;
+                height: 200px;
+                background: #66fccffb;
+                border-radius: 10px;
+                padding: 1em;
+            }
+
+            .box:hover{
+                background: transparent;
+                border: 1px solid #66fccffb;
+                transition: 0.2s;
+                color: #66fccffb;
+            }
+        }
+    }
+}

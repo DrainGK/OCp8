@@ -1,0 +1,106 @@
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+
+    .img-container{
+      border-radius: 10px;
+      width: 600px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+
+      &:hover span,
+      span:hover {
+        visibility: visible;
+        transform: translateY(0);
+      }
+    
+      img {
+        overflow: hidden;
+        object-fit: cover;
+        object-position: 0%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: 0.4s ease-out;
+        position: relative;
+        border-radius: 10px;
+        
+        &:hover,
+            span:hover img {
+              transform: scale(1.2);
+              filter: opacity(15%) contrast(150%);
+            }
+      }
+
+      span {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+        line-height: 34px;
+        font-size: 1.5rem;
+        visibility: hidden;
+        transition: 0.5s ease;
+        transform: translateY(200px);
+
+        h3 {
+          padding-bottom: 10px;
+          color: #f67dff;
+        }
+
+        p, h4{
+          color: whitesmoke;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .right-arrow, .left-arrow{
+        position: absolute;
+        top: 45%;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+        background-color: transparent;
+        border: none;
+
+        font-size: 3rem;
+        color: #66fccffb;
+        padding: 0.1rem;
+        transition: 1.1s ease-out;
+    }
+
+    .right-arrow:hover, .left-arrow:hover{
+      cursor: pointer;
+      color: #f67dff;
+      transform: scale(1.1);
+      transition: 0.5s ease-out;
+    }
+    
+    .right-arrow {
+      right: 20%;
+    }
+    
+    .left-arrow {
+      left: 20%;
+    }
+    
+    
+    .slide {
+      opacity: 0;
+      transition-duration: 1s ease;
+    }
+    
+    .slide.active {
+      opacity: 1;
+      transition-duration: 1s;
+      transform: scale(1.08);
+    }
+  }
+  

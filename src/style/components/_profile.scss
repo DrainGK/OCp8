@@ -1,0 +1,59 @@
+.profile{
+  width: 100%;
+  height: 100vh;
+  .profile-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  .profile-picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    margin-right: 2em;
+    img{
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      margin-bottom: 2em;
+      box-shadow: 12px 12px 1px 1px #66fccffb;
+      transition: 0.2s ease-out;
+    }
+    img:hover{
+      transform: scale(1.1);
+      box-shadow: -12px -12px 1px 1px #f67dff;;
+      margin:0 3em 3em 0;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  .WhoAmI{
+
+    width: 40%;
+    color: whitesmoke;
+    text-justify: inter-word;
+
+    .hi{
+      color: #66fccffb;
+      margin-bottom: 1em;
+    }
+    .myName{
+      font-weight: 800;
+      font-size: 3rem;
+    }
+    .whatIdo{
+      opacity: 0.7;
+      font-size: 2.5rem;
+      margin-bottom: 0.5em;
+    }
+    P{
+      line-height: 1.5em;
+    }
+    a{
+      color: rgb(82, 207, 48);
+    }
+  }
+}
+}
